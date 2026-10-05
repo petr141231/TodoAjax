@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AJAX + ASP.NET Demo</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Todo (AJAX + ASP.NET)</h1>
+    <span id="spinner" class="spinner hidden" title="Загрузка..."></span>
+  </header>
+
+  <form id="addForm">
+    <input id="title" type="text" placeholder="Новая задача..." autocomplete="off" required />
+    <button type="submit">Добавить</button>
+  </form>
+
+  <div class="search-box">
+    <input id="search" type="text" placeholder="🔎 Поиск (debounce 300ms)..." autocomplete="off" />
+    <span id="searchStatus"></span>
+  </div>
+
+  <p id="status">Всего задач: 0</p>
+
+  <ul id="list"></ul>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
